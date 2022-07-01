@@ -1,12 +1,18 @@
 version: 0.2
 
 phases:
+  # pre_build:
+  #   commands:
+  #     - npm install
+  # build:
+  #   commands:
+  #     - npm run build
   pre_build:
     commands:
-      - npm install
+      - echo "pre-build success"
   build:
     commands:
-      - npm run build
+      - echo "build success"
   post_build:
     commands:
       - echo Build completed on `date`
