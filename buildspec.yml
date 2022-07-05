@@ -9,6 +9,7 @@ phases:
   #     - npm run build
   pre_build:
     commands:
+      - npm install
       - echo "pre-build success"
   build:
     commands:
