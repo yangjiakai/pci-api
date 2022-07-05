@@ -1,7 +1,7 @@
 var express = require("express");
 var app = express();
 var fs = require("fs");
-var port = 3000;
+var port = 8080;
 
 // 允许跨域访问
 app.use((req, res, next) => {
