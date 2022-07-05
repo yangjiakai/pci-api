@@ -1,7 +1,10 @@
-import express from "express";
+let express = require("express");
 let router = express.Router();
 
-import { client } from "../aws";
+const AWS = require("aws-sdk");
+AWS.config.update({ region: "ap-northeast-1" });
+const client = new AWS.DynamoDB.DocumentClient();
+
 const tableName = "pic";
 /**
  * GET: /pics get picList

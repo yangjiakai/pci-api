@@ -3,7 +3,7 @@ var app = express();
 var fs = require("fs");
 var port = 80;
 
-允许跨域访问;
+// 允许跨域访问;
 app.use((req, res, next) => {
   //判断路径
   if (req.path !== "/" && !req.path.includes(".")) {
